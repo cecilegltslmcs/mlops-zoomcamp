@@ -33,3 +33,9 @@ MLFlow is an open source platform for the machine learning lifecycle. In practic
 - Projects
 
 The MLFlow Tracking module allows you to organize your experiments into runs, and to keep track of parameters (which includes hyperparameters and any other parameters such as the path of the training dataset), metrics, metadata, artifacts and models. Along with this information, MLFlow automatically logs extra information about the run: source code, version of the code (git commit), start and end time, author.
+
+```bash
+
+# command to create a storage for launching backend
+mlflow ui --backend-store-uri sqlite:///mlflow.db
+```
