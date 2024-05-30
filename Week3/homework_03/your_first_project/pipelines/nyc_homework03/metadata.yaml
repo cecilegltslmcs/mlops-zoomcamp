@@ -1,0 +1,74 @@
+blocks:
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks:
+  - nyc_data_preparation
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: NYC_data_ingestiton
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_loader
+  upstream_blocks: []
+  uuid: nyc_data_ingestiton
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks:
+  - nyc_data_prepare_before_model
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: nyc_data_preparation
+  retry_config: null
+  status: executed
+  timeout: null
+  type: transformer
+  upstream_blocks:
+  - nyc_data_ingestiton
+  uuid: nyc_data_preparation
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: nyc_data_prepare_before_model
+  retry_config: null
+  status: updated
+  timeout: null
+  type: transformer
+  upstream_blocks:
+  - nyc_data_preparation
+  uuid: nyc_data_prepare_before_model
+cache_block_output_in_memory: false
+callbacks: []
+concurrency_config: {}
+conditionals: []
+created_at: '2024-05-30 20:33:59.237510+00:00'
+data_integration: null
+description: null
+executor_config: {}
+executor_count: 1
+executor_type: null
+extensions: {}
+name: NYC_homework03
+notification_config: {}
+remote_variables_dir: null
+retry_config: {}
+run_pipeline_in_one_process: false
+settings:
+  triggers: null
+spark_config: {}
+tags: []
+type: python
+uuid: nyc_homework03
+variables_dir: /home/src/mage_data/your_first_project
+widgets: []
