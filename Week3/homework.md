@@ -18,11 +18,15 @@ v0.9.70
 
 3,403,766
 
+[Script](https://github.com/cecilegltslmcs/mlops-zoomcamp/blob/main/Week3/homework_03/your_first_project/data_loaders/nyc_data_ingestiton.py)
+
 ## Question 4: Data preparation
 
 *What's the size of the result?*
 
 3,316,216
+
+[Script](https://github.com/cecilegltslmcs/mlops-zoomcamp/blob/main/Week3/homework_03/your_first_project/transformers/nyc_data_preparation.py)
 
 ## Question 5: Train a model
 
